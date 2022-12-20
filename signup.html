@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div class=" container-fluid bg-light vh-100 d-flex justify-content-center align-items-center">
+        <div class="w-75 m-auto bg-white p-4 shadow-sm bors rounded-2">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class=" text-capitalize mb-5">sign up </h1>
+                    <div>
+                        <div class=" d-flex justify-content-between align-items-center ">
+                            <i class="fa-solid fa-user me-2"></i>
+                            <input type="text" id="userInputName" placeholder="Your name" class="form-control form-control-sm my-4">
+                        </div>
+                        <p id="usernameAlert" class="d-none text-danger ms-5 fs">include at least 3 letters starting with capital</p>
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="fa-solid fa-envelope me-2"></i>
+                            <input type="text "  id="userInputEmail" placeholder=" your email" class="form-control form-control-sm my-4">
+                        </div>
+                        <p id="emailAlert" class="d-none text-danger ms-5 fs"> mst be example@gmail.com</p>
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <i class="fa-solid fa-lock me-2"></i>
+                            <input type="password"  id="userInputPassword" placeholder="your password"
+                            class="form-control form-control-sm my-4">
+                        </div>
+                        <p id="passwordlAlert" class="d-none text-danger ms-5 fs"> Password required and should be at least 6 character</p>
+                    </div>
+                    <p class="text-danger d-none" id="emailExist"> Email is already exist Enter another one</p>
+                    <p class="text-center text-success d-none" id="confirmmsg">success</p>
+                    <button class="btn btn-primary px-3 ms-5 d-inline " onclick="signup()">Register</button>
+                    <button class="btn btn-outline-success ms-5 d-none  mt-2" id="confirmbtn"> <a href="login.html" class=" text-decoration-none text-dark">signin</a></button>
+                    <p class=" mt-4">you have an accoount? <a href="login.html"
+                    class=" text-decoration-none text-primary ">Sign in</a></p>
+                  
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div>
+                        <img src="./image/draw1.webp" alt="logo" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
